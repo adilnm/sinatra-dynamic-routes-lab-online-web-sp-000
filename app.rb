@@ -10,7 +10,7 @@ class App < Sinatra::Base
 
   get "/say/:number" do
     @num = params[:number].to_i
-    @answer=@user_name.reverse
+    @answer=@num * @num 
   end
 
 end
