@@ -5,7 +5,7 @@ class App < Sinatra::Base
   get "/reversename/:name" do
     @user_name = params[:name]
     @answer=@user_name.reverse
-    "@answer"
+    @answer
   end
 
 end
