@@ -8,4 +8,9 @@ class App < Sinatra::Base
     @answer
   end
 
+  get "/say/:number" do
+    @num = params[:number].to_i
+    @answer=@user_name.reverse
+  end
+
 end
